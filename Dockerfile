@@ -1,3 +1,3 @@
-FROM php:8.3-apache
-RUN docker-php-ext-install pdo_mysql
-WORKDIR /var/www/html
+FROM php:8.2-apache
+RUN docker-php-ext-install mysqli && docker-php-ext-enable mysqli
+WORKDIR /workspaces/praca_domowa
