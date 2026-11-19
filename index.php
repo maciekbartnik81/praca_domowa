@@ -56,6 +56,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['add_date'])) {
         <form method="post">
             <button type="submit" name="connect">Połącz z bazą</button>
         </form>
+         <form method="post">
+            <button type="submit" name="add_date">Wykonaj skrypt</button>
+        </form>
 
         <?php if ($status !== ''): ?>
             <p><?php echo htmlspecialchars($status, ENT_QUOTES, 'UTF-8'); ?></p>
